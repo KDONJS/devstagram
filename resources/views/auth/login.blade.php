@@ -17,8 +17,16 @@
         </p> --}}
       </div>
       
-      <form class="mt-8 space-y-6"  novalidate>
+      <form class="mt-8 space-y-6" action="{{ route('login') }}"  method="POST" novalidate>
         @csrf
+
+        @if (session('mensaje'))
+        <div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800" role="alert">
+          <span class="font-medium">Alerta!</span> {{session('mensaje')}}
+      </div>
+        @endif
+
+
         <div class="rounded-md shadow-sm -space-y-px">
 
 
@@ -43,12 +51,12 @@
               </div>
             @enderror
           </div>
-
+  
 
         </div>
   
         <div>
-            <input type="submit" value="Crear cuenta" class="cursor-pointer transition-colors relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            <input type="submit" value="Iniciar sesion" class="cursor-pointer transition-colors relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
           
         </div>
       </form>
