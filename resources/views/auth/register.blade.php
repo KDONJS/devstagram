@@ -16,7 +16,8 @@
           <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500"> start your 14-day free trial </a>
         </p> --}}
       </div>
-      <form class="mt-8 space-y-6" action="{{ route('register') }}" method="POST" novalidate>
+      
+      <form class="mt-8 space-y-6" action="{{ Route('register') }}" method="POST" novalidate>
         @csrf
         <div class="rounded-md shadow-sm -space-y-px">
           <div>
@@ -70,10 +71,11 @@
         </div>
   
         <div>
-            <input type="submit" value="Crear cuenta" class="group cursor-pointer transition-colors relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            <input type="submit" value="Crear cuenta" class="cursor-pointer transition-colors relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
           
         </div>
       </form>
+
     </div>
   </div>
 @endsection
