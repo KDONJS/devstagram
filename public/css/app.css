@@ -589,6 +589,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .p-5 {
   padding: 1.25rem;
 }
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -751,7 +755,21 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 1.25rem;
   }
 }
+@media (min-width: 768px) {
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:w-8\/12 {
+    width: 66.666667%;
+  }
+}
 @media (min-width: 1024px) {
+
+  .lg\:w-6\/12 {
+    width: 50%;
+  }
 
   .lg\:px-8 {
     padding-left: 2rem;
