@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
 @section('titulo')
-
-    nosotros
-
+    registrate en devstagram
 @endsection

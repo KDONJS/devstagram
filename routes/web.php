@@ -17,10 +17,6 @@ Route::get('/', function () {
     return view('principal');
 });
 
-Route::get('/nosotros', function () {
-    return view('nosotros');
-});
-
-Route::get('/tienda-virtual', function () {
-    return view('tienda');
+Route::get('/crear-cuenta', function () {
+    return view('auth.register');
 });
