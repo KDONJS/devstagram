@@ -53,7 +53,7 @@
 
                 <div>
                     <div class="mb-5">
-                        <input type="hidden" name="imagen">
+                        <input type="hidden" name="imagen" value="{{ old('imagen') }}">
                         @error('imagen')
                         <br>
                           <div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800" role="alert">
